@@ -1,10 +1,10 @@
 # Ali Mohsen Maruf
 
-> Personal portfolio of Ali Mohsen Maruf, a Geography and Environment undergraduate at Jahangirnagar University in Bangladesh. His interests include GIS, spatial research, land use and land cover assessment, and education technology.
+> Personal portfolio of Ali Mohsen Maruf, a student, researcher, and builder in Bangladesh. His work spans digital products, design, teaching, and spatial research.
 
 ## About
 
-Ali explores how geographic information and digital products can make research and opportunities easier to understand and use. He is currently building AmarApply, a scholarship information and discovery platform.
+Ali studies Geography and Environment at Jahangirnagar University. He explores different interests through research, digital products, design, and teaching. He is currently building AmarApply, a scholarship information and discovery platform.
 
 ## Selected work
 
