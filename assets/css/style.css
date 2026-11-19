@@ -35,3 +35,112 @@ article.active{display:block}
   .portrait-panel img{height:calc(100% - 58px);bottom:52px;object-position:center bottom}
 }
 @media(prefers-reduced-motion:reduce){.portrait-panel img,.portrait-panel img.is-visible{animation:none;opacity:1;transform:none}}
+
+/* Let the portrait behave like an editorial cutout, not a boxed profile card. */
+.hero-copy{z-index:1}
+.portrait-panel{
+  z-index:2;
+  overflow:visible;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.portrait-panel:before{
+  inset:4% -18% 1% -10%;
+  border-radius:54% 46% 59% 41% / 43% 52% 48% 57%;
+  background:
+    repeating-radial-gradient(ellipse at 53% 51%,transparent 0 25px,#78916e4a 26px 27px,transparent 28px 43px),
+    radial-gradient(ellipse at 52% 53%,#dce7d6 0 56%,transparent 57%);
+  clip-path:polygon(11% 8%,79% 0,100% 24%,94% 77%,76% 100%,26% 92%,0 61%);
+}
+.portrait-panel:after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  inset:14% -5% 4% 1%;
+  background:repeating-radial-gradient(ellipse at 50% 52%,transparent 0 37px,#78916e35 38px 39px,transparent 40px 58px);
+  clip-path:ellipse(49% 48% at 52% 53%);
+  pointer-events:none;
+}
+.portrait-panel img{
+  z-index:2;
+  width:175%;
+  height:auto;
+  max-width:none;
+  left:0;
+  bottom:4px;
+  object-fit:contain;
+  object-position:center bottom;
+}
+.portrait-top{
+  left:8px;
+  right:-110px;
+  top:22px;
+  z-index:3;
+}
+.portrait-caption{
+  z-index:3;
+  left:12px;
+  right:auto;
+  bottom:14px;
+  width:max-content;
+  max-width:190px;
+  height:auto;
+  padding:9px 13px;
+  border:1px solid #ffffffb8;
+  border-radius:99px;
+  background:#f4f3efcf;
+  color:var(--ink);
+  box-shadow:0 5px 18px #23372b12;
+}
+.portrait-caption br{display:none}
+.geo-stamp{
+  position:absolute;
+  z-index:2;
+  left:clamp(30px,5vw,68px);
+  bottom:72px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#697367;
+}
+.geo-stamp-map{
+  position:relative;
+  width:52px;
+  height:42px;
+  overflow:hidden;
+  border-radius:48% 52% 43% 57%;
+  background:
+    repeating-radial-gradient(ellipse at 62% 48%,transparent 0 8px,#71896a55 9px 10px,transparent 11px 17px),
+    #e8eee3;
+}
+.geo-stamp-map i{
+  position:absolute;
+  top:15px;
+  left:30px;
+  width:7px;
+  height:7px;
+  border:2px solid #fff;
+  border-radius:50%;
+  background:var(--accent-deep);
+  box-shadow:0 0 0 3px #78916e44;
+}
+.geo-stamp b,.geo-stamp small{display:block}
+.geo-stamp b{font-size:8px;letter-spacing:.12em}
+.geo-stamp small{margin-top:4px;font-size:8px;letter-spacing:.06em}
+@media(max-width:900px){
+  .portrait-panel img{width:155%}
+}
+@media(max-width:600px){
+  .portrait-panel{overflow:visible}
+  .portrait-panel:before{inset:8% -18% 1% -12%}
+  .portrait-panel:after{inset:20% -11% 3% -8%}
+  .portrait-panel img{width:138%;left:0;bottom:52px;height:auto}
+  .portrait-top{left:5px;right:-80px;top:13px;font-size:6px}
+  .portrait-caption{left:0;bottom:9px;padding:7px 9px;font-size:7px}
+  .geo-stamp{left:23px;bottom:60px;gap:7px}
+  .geo-stamp-map{width:38px;height:32px}
+  .geo-stamp-map i{top:11px;left:21px}
+  .geo-stamp b,.geo-stamp small{font-size:6px}
+}
