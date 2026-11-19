@@ -2190,3 +2190,38 @@ article {
     border-right: 0;
   }
 }
+
+
+
+/*-----------------------------------*\
+  #FINAL SHAPE AND GRID OVERRIDES
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+body {
+  background-image:
+    radial-gradient(circle, hsla(76, 100%, 62%, 0.24) 1px, transparent 1.5px),
+    radial-gradient(circle, hsla(0, 0%, 100%, 0.08) 1px, transparent 1.5px);
+  background-size: 24px 24px, 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--smoky-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border: 2px solid var(--smoky-black);
+  border-radius: 0;
+}
