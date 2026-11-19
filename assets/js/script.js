@@ -1,5 +1,17 @@
 'use strict';
 
+const portrait = document.querySelector('.portrait-panel img');
+if (portrait) {
+  portrait.classList.add('is-loading');
+  const revealPortrait = () => {
+    portrait.classList.remove('is-loading');
+    portrait.classList.add('is-visible');
+  };
+  if (portrait.complete && portrait.naturalWidth > 0) revealPortrait();
+  else portrait.addEventListener('load', revealPortrait, { once: true });
+  portrait.addEventListener('error', () => portrait.classList.remove('is-loading'), { once: true });
+}
+
 document.querySelectorAll('[data-jump]').forEach((control) => {
   control.addEventListener('click', () => {
     const target = document.getElementById(control.dataset.jump);
