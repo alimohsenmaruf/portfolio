@@ -1,0 +1,22 @@
+# Ali Mohsen Maruf
+
+> Personal portfolio of Ali Mohsen Maruf, a Geography and Environment undergraduate at Jahangirnagar University in Bangladesh. His interests include GIS, spatial research, land use and land cover assessment, and education technology.
+
+## About
+
+Ali explores how geographic information and digital products can make research and opportunities easier to understand and use. He is currently building AmarApply, a scholarship information and discovery platform.
+
+## Selected work
+
+- [AmarApply](https://scholarships.amarapply.com): Scholarship information and discovery platform.
+- [Jahangirnagar University land cover assessment](https://www.linkedin.com/posts/alimohsenmaruf_gis-qgis-spatialanalysis-activity-7510648950807314432-EwSI): Preliminary QGIS and OpenStreetMap based spatial assessment.
+
+## Contact
+
+- Email: ali.mohsen.maruf@gmail.com
+- WhatsApp: +8801540553233
+- Location: Bangladesh
+
+## Main pages
+
+- [Portfolio home](https://alimohsenmaruf.com/)
