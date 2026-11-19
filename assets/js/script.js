@@ -1,6 +1,6 @@
 'use strict';
 
-const portrait = document.querySelector('.portrait-panel img');
+const portrait = document.querySelector('.portrait-scene img');
 if (portrait) {
   portrait.classList.add('is-loading');
   const revealPortrait = () => {
